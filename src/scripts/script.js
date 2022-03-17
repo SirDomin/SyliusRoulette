@@ -1,4 +1,4 @@
-let devs = [
+const devs = [
     'Grześ',
     'Łuki',
     'Mati',
@@ -10,9 +10,8 @@ let devs = [
     'Domino',
     'Kevin'
 ];
-
-let rouletteButton = document.getElementById('roulette-button');
-let devContainer = document.getElementById('dev-list');
+const rouletteButton = document.getElementById('roulette-button');
+const devContainer = document.getElementById('dev-list');
 
 function renderDevs() {
     for (let x in devs) {
@@ -57,7 +56,7 @@ function pickRandomDevId() {
 }
 
 function startRoulette() {
-    let picks = Math.floor(Math.random() * 10) + 10;
+    const picks = Math.floor(Math.random() * devs.length) + devs.length;
 
     animate(picks);
 }
