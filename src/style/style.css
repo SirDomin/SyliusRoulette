@@ -1,0 +1,84 @@
+body, html {
+    background: #224C51;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.header {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 4em;
+    color: #fff;
+    padding: 1em;
+}
+
+.dev-container {
+    margin-bottom: 20px;
+}
+
+.dev-element {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 20px 100px;
+    height: 2em;
+    align-content: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.dev-element.active {
+    background-color: #22b99a;
+    color: black;
+}
+
+.dev-name {
+    height: 25px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.remove-button {
+    cursor: pointer;
+    color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#roulette-button {
+    cursor: pointer;
+    background-color: #22b99a;
+    border-color: #22b99a;
+    border-radius: 5px;
+    padding: .8rem 2.4rem;
+    font-family: 'Fredoka', sans-serif;
+    width: 250px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#roulette-button.disabled {
+    cursor: wait;
+    background-color: #1D4A4D;
+    border-color: red;
+    color: black;
+    border-radius: 5px;
+    padding: .8rem 2.4rem;
+    font-family: 'Fredoka', sans-serif;
+    width: 250px;
+    font-size: 1.5em;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
